@@ -3,7 +3,7 @@
 A self-hosted, multi-mode commerce platform built on Laravel. ShopKeeprr ships with retail, B2B wholesale, subscription and multi-vendor business models, a Stripe/PayPal checkout layer, an admin dashboard, a drag-and-drop storefront builder, an extensible module system and four production-ready storefront themes.
 
 **Version:** 1.0.0  
-**Author:** Stephan Johnson (SJDesigns) · stephanjohnson109@gmail.com  
+**Author:** Stephan Johnson (DevByStephan) · stephanjohnson109@gmail.com or info@shopkeeprr.com
 **Stack:** Laravel 13 · PHP 8.3+ · MySQL 8 / SQLite · Vite 8 · Tailwind CSS 4 · Alpine.js 3
 
 > **Documentation:** the buyer package includes a full `documentation/ShopKeeprr-Installation-and-FAQ.pdf` covering installation, first-run setup, store models, themes, payments, email, legal pages, security and troubleshooting. See [`UPDATING.md`](UPDATING.md) for the signed update and rollback guide.
