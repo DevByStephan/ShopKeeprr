@@ -1,0 +1,30 @@
+ShopKeeprr Documentation and Example License
+
+Copyright (c) 2026 Stephan Johnson (SJDesigns). All rights reserved.
+
+This repository contains documentation and example templates for the
+commercial ShopKeeprr application.
+
+You may:
+
+- Read, link to and quote short excerpts of the documentation with attribution.
+- Copy and modify the example module and theme templates to build extensions
+  for a licensed ShopKeeprr installation.
+- Include the examples in a client project covered by a valid ShopKeeprr
+  license.
+
+You may not:
+
+- Redistribute the ShopKeeprr application, its buyer archive, update packages,
+  license keys or private downloads.
+- Resell this documentation or the examples as a standalone product.
+- Represent this repository as the source repository for the ShopKeeprr
+  application.
+- Remove copyright notices from substantial portions of the documentation.
+
+The ShopKeeprr application is governed by the commercial license included with
+the buyer package. Third-party dependencies remain under their own licenses.
+
+The documentation and examples are provided "as is", without warranty of any
+kind. Test every example on a staging installation before using it on a live
+store.

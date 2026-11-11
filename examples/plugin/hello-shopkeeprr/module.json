@@ -1,0 +1,14 @@
+{
+  "name": "Hello ShopKeeprr",
+  "slug": "hello-shopkeeprr",
+  "version": "1.0.0",
+  "type": "plugin",
+  "namespace": "Modules\\HelloShopKeeprr\\",
+  "source": "src",
+  "provider": "Modules\\HelloShopKeeprr\\HelloShopKeeprrServiceProvider",
+  "description": "Adds a signed-in example account page that demonstrates the ShopKeeprr module contract.",
+  "requires": {
+    "shopkeeprr": ">=1.0.0 <2.0.0",
+    "module_api": "1.0"
+  }
+}

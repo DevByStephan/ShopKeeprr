@@ -1,0 +1,25 @@
+{
+  "key": "atelier-example",
+  "label": "Atelier Example",
+  "version": "1.0.0",
+  "description": "A warm, typography-led storefront preset for curated catalogs.",
+  "requires": {
+    "shopkeeprr": ">=1.0.0 <2.0.0"
+  },
+  "palette": {
+    "brand": "#0f766e",
+    "link": "#0f766e",
+    "accent": "#d97706",
+    "ink": "#17231f",
+    "surface": "#f6f3ec",
+    "card": "#ffffff",
+    "line": "#e3e9e5",
+    "price": "#17231f",
+    "sale": "#9a3412"
+  },
+  "defaults": {
+    "heading_font": "Fraunces",
+    "body_font": "Inter",
+    "product_columns": 3
+  }
+}
