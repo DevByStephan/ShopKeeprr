@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Field notes notebook">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4efe5"/><stop offset="1" stop-color="#e5ded1"/>
+    </linearGradient>
+    <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a9553c"/><stop offset="1" stop-color="#823d2a"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#382a22" stop-opacity=".24"/><stop offset="1" stop-color="#382a22" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="660" cy="210" r="180" fill="#efe6d5" opacity=".7"/>
+  <ellipse cx="410" cy="820" rx="290" ry="50" fill="url(#shadow)"/>
+  <g transform="rotate(-7 400 520)">
+    <rect x="208" y="220" width="384" height="600" rx="24" fill="#d8cbb8"/>
+    <rect x="224" y="208" width="384" height="600" rx="24" fill="#eee4d3"/>
+    <rect x="240" y="196" width="384" height="600" rx="24" fill="url(#cover)"/>
+    <rect x="258" y="212" width="22" height="568" rx="8" fill="#743423" opacity=".55"/>
+    <path d="M600 530v256" stroke="#5d2a1c" stroke-width="12" stroke-linecap="round"/>
+    <rect x="330" y="410" width="208" height="150" rx="8" fill="#f0e7d8" opacity=".95"/>
+    <path d="M356 450h156M356 478h156M356 506h108" stroke="#9a8a74" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="560" cy="264" r="16" fill="#e0d2bd" opacity=".7"/>
+  </g>
+  <path d="M300 856h212" stroke="#b8ad98" stroke-width="6" stroke-linecap="round" opacity=".4"/>
+</svg>

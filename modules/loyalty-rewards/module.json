@@ -1,0 +1,14 @@
+{
+  "name": "Loyalty & Rewards",
+  "slug": "loyalty-rewards",
+  "version": "1.0.0",
+  "type": "plugin",
+  "namespace": "Modules\\Loyalty\\",
+  "source": "src",
+  "provider": "Modules\\Loyalty\\LoyaltyServiceProvider",
+  "description": "Points on paid orders, a customer balance and single-use reward coupons.",
+  "requires": {
+    "shopkeeprr": ">=1.0.0 <2.0.0",
+    "module_api": "1.0"
+  }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Everyday canvas tote">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2eee5"/><stop offset="1" stop-color="#e4ddd0"/>
+    </linearGradient>
+    <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ded2bb"/><stop offset=".6" stop-color="#cdbfa4"/><stop offset="1" stop-color="#b9aa8e"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3c3428" stop-opacity=".22"/><stop offset="1" stop-color="#3c3428" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="180" cy="230" r="170" fill="#ebe3d3" opacity=".7"/>
+  <ellipse cx="400" cy="820" rx="300" ry="48" fill="url(#shadow)"/>
+  <path d="M270 360c0-92 260-92 260 0" fill="none" stroke="#b5a487" stroke-width="30" stroke-linecap="round"/>
+  <path d="M278 360c0-76 244-76 244 0" fill="none" stroke="#d3c5ac" stroke-width="14" stroke-linecap="round"/>
+  <path d="M232 392h336l28 372c2 30-22 56-52 56H256c-30 0-54-26-52-56l28-372Z" fill="url(#canvas)"/>
+  <path d="M232 392h336l6 82H226l6-82Z" fill="#e6dbc7" opacity=".75"/>
+  <path d="M300 470v250M500 470v250" stroke="#a8977a" stroke-width="8" stroke-linecap="round" opacity=".35"/>
+  <rect x="352" y="560" width="112" height="112" rx="8" fill="#f1e8d7" opacity=".9"/>
+  <path d="M378 600h60M378 622h44" stroke="#a9977c" stroke-width="6" stroke-linecap="round"/>
+  <path d="M262 700c80 22 196 22 276 0" fill="none" stroke="#a8977a" stroke-width="8" stroke-linecap="round" opacity=".25"/>
+</svg>

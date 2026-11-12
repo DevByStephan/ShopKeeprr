@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Seasonal pantry box">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3eee4"/><stop offset="1" stop-color="#e4dccd"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c69c6c"/><stop offset="1" stop-color="#9a7045"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9a05c"/><stop offset="1" stop-color="#a76a32"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3b2f20" stop-opacity=".22"/><stop offset="1" stop-color="#3b2f20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="640" cy="220" r="190" fill="#ece3d2" opacity=".7"/>
+  <ellipse cx="400" cy="810" rx="310" ry="50" fill="url(#shadow)"/>
+  <g>
+    <rect x="300" y="380" width="90" height="220" rx="18" fill="url(#jar)"/>
+    <rect x="312" y="356" width="66" height="40" rx="8" fill="#6d4a2b"/>
+    <rect x="314" y="480" width="62" height="74" rx="5" fill="#f0e3ce" opacity=".9"/>
+    <path d="M328 508h34M328 528h22" stroke="#9a825f" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g>
+    <rect x="414" y="360" width="96" height="240" rx="18" fill="#8a9a76"/>
+    <rect x="428" y="336" width="68" height="38" rx="7" fill="#4e5c40"/>
+    <rect x="432" y="466" width="60" height="78" rx="5" fill="#f0e8d6" opacity=".92"/>
+    <path d="M446 494h32M446 514h22" stroke="#78836a" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g>
+    <path d="M522 448c0-40 90-40 90 0v152c0 24-20 44-45 44s-45-20-45-44V448Z" fill="#b85a2f"/>
+    <rect x="530" y="420" width="74" height="32" rx="6" fill="#5f3a24"/>
+    <rect x="536" y="498" width="62" height="66" rx="5" fill="#f3e5cf" opacity=".92"/>
+  </g>
+  <path d="M210 590h380l-26 158c-4 26-26 44-52 44H288c-26 0-48-18-52-44l-26-158Z" fill="url(#wood)"/>
+  <path d="M210 590h380l-8 48H218l-8-48Z" fill="#d8b183"/>
+  <path d="M246 590v-34c0-18 14-32 32-32h244c18 0 32 14 32 32v34" fill="none" stroke="#8f673e" stroke-width="16" stroke-linecap="round"/>
+  <path d="M280 700h240M280 740h240" stroke="#7e5a35" stroke-width="10" stroke-linecap="round" opacity=".45"/>
+</svg>

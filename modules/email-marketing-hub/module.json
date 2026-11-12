@@ -1,0 +1,14 @@
+{
+  "name": "Email Marketing Hub",
+  "slug": "email-marketing-hub",
+  "version": "1.0.0",
+  "type": "plugin",
+  "namespace": "Modules\\EmailMarketingHub\\",
+  "source": "src",
+  "provider": "Modules\\EmailMarketingHub\\EmailMarketingServiceProvider",
+  "description": "Sync consented customers and subscribers to Mailchimp, Klaviyo, Brevo, MailerLite or Constant Contact.",
+  "requires": {
+    "shopkeeprr": ">=1.0.0 <2.0.0",
+    "module_api": "1.0"
+  }
+}

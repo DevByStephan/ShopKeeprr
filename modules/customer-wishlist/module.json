@@ -1,0 +1,14 @@
+{
+  "name": "Customer Wishlist",
+  "slug": "customer-wishlist",
+  "version": "1.0.0",
+  "type": "plugin",
+  "namespace": "Modules\\Wishlist\\",
+  "source": "src",
+  "provider": "Modules\\Wishlist\\WishlistServiceProvider",
+  "description": "Lets signed-in shoppers save products and return to them from a private account wishlist.",
+  "requires": {
+    "shopkeeprr": ">=1.0.0 <2.0.0",
+    "module_api": "1.0"
+  }
+}

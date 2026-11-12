@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Copper pour-over kettle">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3efe6"/><stop offset="1" stop-color="#e3ddd1"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d99363"/><stop offset=".45" stop-color="#b96f3f"/><stop offset=".75" stop-color="#94502c"/><stop offset="1" stop-color="#c47a4a"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3730"/><stop offset="1" stop-color="#1f1d19"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3a2a1e" stop-opacity=".24"/><stop offset="1" stop-color="#3a2a1e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="650" cy="200" r="180" fill="#ece3d2" opacity=".7"/>
+  <ellipse cx="400" cy="805" rx="300" ry="50" fill="url(#shadow)"/>
+  <path d="M250 470c0-56 66-94 150-94s150 38 150 94v206c0 58-66 98-150 98s-150-40-150-98V470Z" fill="url(#copper)"/>
+  <ellipse cx="400" cy="480" rx="150" ry="44" fill="#d79b6c"/>
+  <ellipse cx="400" cy="480" rx="116" ry="32" fill="#8a4c29"/>
+  <ellipse cx="400" cy="480" rx="72" ry="20" fill="#3c2a1d"/>
+  <path d="M548 520c92 10 124 54 116 116-8 58-54 82-98 82" fill="none" stroke="#332f28" stroke-width="30" stroke-linecap="round"/>
+  <path d="M548 520c92 10 124 54 116 116-8 58-54 82-98 82" fill="none" stroke="#5b5449" stroke-width="10" stroke-linecap="round" opacity=".45"/>
+  <path d="M302 414c-22-18-40-40-34-64 6-26 34-38 66-32 30 6 52 28 52 28" fill="none" stroke="url(#copper)" stroke-width="28" stroke-linecap="round"/>
+  <path d="M252 510c-86 20-124 84-88 124" fill="none" stroke="#3a3730" stroke-width="24" stroke-linecap="round"/>
+  <path d="M330 540c40 12 102 12 142 0" fill="none" stroke="#e0a779" stroke-width="10" stroke-linecap="round" opacity=".4"/>
+  <path d="M318 650c46 14 120 14 166 0" fill="none" stroke="#7e4323" stroke-width="8" stroke-linecap="round" opacity=".35"/>
+</svg>

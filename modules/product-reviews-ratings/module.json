@@ -1,0 +1,14 @@
+{
+  "name": "Product Reviews & Ratings",
+  "slug": "product-reviews-ratings",
+  "version": "1.0.0",
+  "type": "plugin",
+  "namespace": "Modules\\Reviews\\",
+  "source": "src",
+  "provider": "Modules\\Reviews\\ReviewsServiceProvider",
+  "description": "Verified-purchase reviews, star ratings, photo uploads and an admin moderation queue.",
+  "requires": {
+    "shopkeeprr": ">=1.0.0 <2.0.0",
+    "module_api": "1.0"
+  }
+}

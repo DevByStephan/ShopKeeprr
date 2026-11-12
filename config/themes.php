@@ -1,0 +1,188 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Storefront themes
+|--------------------------------------------------------------------------
+|
+| Each preset is a complete, colour-checked storefront design. The palette
+| values become CSS custom properties in theme/layouts/app.blade.php, so a
+| preset can change the header, cards, buttons and typography without
+| touching the commerce code.
+|
+| Themes that share a folder name under resources/views/theme/presets can
+| override any storefront view (home, partials.header, shop.index, ...).
+|
+*/
+
+return [
+
+    'editorial' => [
+        'label' => 'Editorial',
+        'tagline' => 'Boutique & brand-led',
+        'description' => 'A calm, typography-led layout for curated catalogs, makers and small-batch brands.',
+        'best_for' => 'Lifestyle stores, design studios, small-batch brands',
+        'defaults' => [
+            'primary_color' => '#0f766e',
+            'accent_color' => '#d97706',
+            'heading_font' => 'Fraunces',
+            'body_font' => 'Inter',
+            'product_columns' => 3,
+        ],
+        'palette' => [
+            'brand' => '#0f766e',
+            'brand-soft' => '#e7f5f0',
+            'link' => '#0f766e',
+            'accent' => '#d97706',
+            'ink' => '#17231f',
+            'ink-strong' => '#102522',
+            'muted' => '#687771',
+            'surface' => '#f6f3ec',
+            'surface-2' => '#eef2ef',
+            'card' => '#ffffff',
+            'line' => '#e3e9e5',
+            'header-bg' => '#f6f3ec',
+            'header-ink' => '#17231f',
+            'header-muted' => '#5d6d66',
+            'footer-bg' => '#102522',
+            'footer-ink' => '#ffffff',
+            'footer-muted' => 'rgba(255,255,255,.58)',
+            'price' => '#17231f',
+            'sale' => '#9a3412',
+            'success' => '#047857',
+            'button-ink' => '#ffffff',
+            'display-fallback' => "Georgia, 'Times New Roman', serif",
+            'sans-fallback' => "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif",
+        ],
+        'card_radius' => '1rem',
+        'button_radius' => '999px',
+        'preview' => ['#f6f3ec', '#102522', '#0f766e', '#d97706'],
+    ],
+
+    'marketplace' => [
+        'label' => 'Marketplace',
+        'tagline' => 'High-volume catalog',
+        'description' => 'A dense, search-first layout built for large catalogs, fast scanning and everyday-low-price positioning.',
+        'best_for' => 'General stores, electronics, homeware, high-SKU catalogs',
+        'defaults' => [
+            'primary_color' => '#ffd814',
+            'accent_color' => '#febd69',
+            'heading_font' => 'Inter',
+            'body_font' => 'Inter',
+            'product_columns' => 4,
+        ],
+        'palette' => [
+            'brand' => '#ffd814',
+            'brand-soft' => '#fff7d6',
+            'link' => '#007185',
+            'accent' => '#febd69',
+            'ink' => '#0f1111',
+            'ink-strong' => '#131921',
+            'muted' => '#565959',
+            'surface' => '#eaeded',
+            'surface-2' => '#f7f8f8',
+            'card' => '#ffffff',
+            'line' => '#d5d9d9',
+            'header-bg' => '#131921',
+            'header-ink' => '#ffffff',
+            'header-muted' => '#cccccc',
+            'footer-bg' => '#232f3e',
+            'footer-ink' => '#ffffff',
+            'footer-muted' => 'rgba(255,255,255,.66)',
+            'price' => '#0f1111',
+            'sale' => '#cc0c39',
+            'success' => '#067d62',
+            'button-ink' => '#0f1111',
+            'display-fallback' => "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif",
+            'sans-fallback' => "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif",
+        ],
+        'card_radius' => '.55rem',
+        'button_radius' => '.5rem',
+        'preview' => ['#131921', '#febd69', '#ffd814', '#eaeded'],
+    ],
+
+    'auction' => [
+        'label' => 'Auction House',
+        'tagline' => 'Listings & discovery',
+        'description' => 'A bright, link-rich marketplace layout with strong search, category nav and deal-led merchandising.',
+        'best_for' => 'Marketplaces, collectibles, refurbished goods, classifieds',
+        'defaults' => [
+            'primary_color' => '#0064d2',
+            'accent_color' => '#f5af02',
+            'heading_font' => 'Inter',
+            'body_font' => 'Inter',
+            'product_columns' => 4,
+        ],
+        'palette' => [
+            'brand' => '#0064d2',
+            'brand-soft' => '#e8f2ff',
+            'link' => '#0064d2',
+            'accent' => '#f5af02',
+            'ink' => '#191919',
+            'ink-strong' => '#111820',
+            'muted' => '#5f6368',
+            'surface' => '#f7f7f7',
+            'surface-2' => '#f1f3f6',
+            'card' => '#ffffff',
+            'line' => '#e2e5e9',
+            'header-bg' => '#ffffff',
+            'header-ink' => '#111820',
+            'header-muted' => '#5f6368',
+            'footer-bg' => '#ffffff',
+            'footer-ink' => '#111820',
+            'footer-muted' => '#5f6368',
+            'price' => '#111820',
+            'sale' => '#cc0000',
+            'success' => '#3f7f00',
+            'button-ink' => '#ffffff',
+            'display-fallback' => "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif",
+            'sans-fallback' => "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif",
+        ],
+        'card_radius' => '.5rem',
+        'button_radius' => '.5rem',
+        'preview' => ['#ffffff', '#0064d2', '#f5af02', '#e53238'],
+    ],
+
+    'bazaar' => [
+        'label' => 'Global Bazaar',
+        'tagline' => 'Deals & discovery',
+        'description' => 'A vivid, promotion-led layout with bold price anchors, deal blocks and a fast-moving product grid.',
+        'best_for' => 'Discount stores, accessories, trend-led catalogs, cross-border retail',
+        'defaults' => [
+            'primary_color' => '#e62e04',
+            'accent_color' => '#ff6a00',
+            'heading_font' => 'Inter',
+            'body_font' => 'Inter',
+            'product_columns' => 4,
+        ],
+        'palette' => [
+            'brand' => '#e62e04',
+            'brand-soft' => '#fff0eb',
+            'link' => '#e62e04',
+            'accent' => '#ff6a00',
+            'ink' => '#1a1a1a',
+            'ink-strong' => '#191919',
+            'muted' => '#757575',
+            'surface' => '#f5f5f5',
+            'surface-2' => '#f2f2f2',
+            'card' => '#ffffff',
+            'line' => '#e8e8e8',
+            'header-bg' => '#ffffff',
+            'header-ink' => '#1a1a1a',
+            'header-muted' => '#555555',
+            'footer-bg' => '#f5f5f5',
+            'footer-ink' => '#1a1a1a',
+            'footer-muted' => '#6b6b6b',
+            'price' => '#e62e04',
+            'sale' => '#e62e04',
+            'success' => '#1c7d3c',
+            'button-ink' => '#ffffff',
+            'display-fallback' => "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif",
+            'sans-fallback' => "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif",
+        ],
+        'card_radius' => '.75rem',
+        'button_radius' => '999px',
+        'preview' => ['#ffffff', '#e62e04', '#ff6a00', '#f5f5f5'],
+    ],
+
+];

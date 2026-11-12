@@ -1,0 +1,14 @@
+{
+  "name": "Abandoned Cart Recovery",
+  "slug": "abandoned-cart-recovery",
+  "version": "1.0.0",
+  "type": "plugin",
+  "namespace": "Modules\\AbandonedCart\\",
+  "source": "src",
+  "provider": "Modules\\AbandonedCart\\AbandonedCartServiceProvider",
+  "description": "Timed reminders for unpaid checkouts with signed recovery links and click tracking.",
+  "requires": {
+    "shopkeeprr": ">=1.0.0 <2.0.0",
+    "module_api": "1.0"
+  }
+}

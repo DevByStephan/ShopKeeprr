@@ -1,0 +1,14 @@
+{
+  "name": "Product Bundles & Upsells",
+  "slug": "product-bundles-upsells",
+  "version": "1.0.0",
+  "type": "plugin",
+  "namespace": "Modules\\Bundles\\",
+  "source": "src",
+  "provider": "Modules\\Bundles\\BundlesServiceProvider",
+  "description": "Frequently-bought-together bundles with percentage or fixed discounts and stock checks.",
+  "requires": {
+    "shopkeeprr": ">=1.0.0 <2.0.0",
+    "module_api": "1.0"
+  }
+}

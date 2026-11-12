@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Roaster's choice coffee bag">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4efe5"/><stop offset="1" stop-color="#e5ddcd"/>
+    </linearGradient>
+    <linearGradient id="kraft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c7a77a"/><stop offset=".55" stop-color="#b08c5e"/><stop offset="1" stop-color="#8e6c43"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3b2f20" stop-opacity=".22"/><stop offset="1" stop-color="#3b2f20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="160" cy="230" r="170" fill="#ece2d1" opacity=".7"/>
+  <ellipse cx="400" cy="830" rx="270" ry="46" fill="url(#shadow)"/>
+  <path d="M290 300c0-34 28-58 62-58h96c34 0 62 24 62 58v440c0 36-28 64-64 64H354c-36 0-64-28-64-64V300Z" fill="url(#kraft)"/>
+  <path d="M290 320h220" stroke="#7f5e39" stroke-width="10" opacity=".5"/>
+  <path d="M300 268c30-22 170-22 200 0" fill="none" stroke="#9d7a4d" stroke-width="16" stroke-linecap="round"/>
+  <rect x="326" y="430" width="148" height="200" rx="10" fill="#f1e7d5"/>
+  <circle cx="400" cy="488" r="34" fill="#5b3d28"/>
+  <path d="M384 488c10-14 22-14 32 0-10 14-22 14-32 0Z" fill="#f1e7d5"/>
+  <path d="M352 550h96M352 576h72M352 602h96" stroke="#9b876b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M326 680h148" stroke="#e3d4bd" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+  <path d="M326 708h104" stroke="#e3d4bd" stroke-width="7" stroke-linecap="round" opacity=".45"/>
+  <circle cx="400" cy="368" r="22" fill="#6e4c2e" opacity=".65"/>
+</svg>

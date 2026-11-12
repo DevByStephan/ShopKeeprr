@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Stoneware planter">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f0e8"/><stop offset="1" stop-color="#e2dfd3"/>
+    </linearGradient>
+    <linearGradient id="pot" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe6d6"/><stop offset=".6" stop-color="#dbcdb7"/><stop offset="1" stop-color="#c3b299"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3b3b2e" stop-opacity=".2"/><stop offset="1" stop-color="#3b3b2e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="620" cy="230" r="190" fill="#eae6d8" opacity=".7"/>
+  <ellipse cx="400" cy="820" rx="260" ry="44" fill="url(#shadow)"/>
+  <g fill="none" stroke="#5c7358" stroke-width="12" stroke-linecap="round">
+    <path d="M400 560c0-110 10-210 60-280"/>
+    <path d="M400 580c-12-96-58-160-124-196"/>
+    <path d="M400 590c34-86 92-132 156-146"/>
+    <path d="M402 520c-8-74 8-150 54-200"/>
+  </g>
+  <g fill="#778d6d">
+    <ellipse cx="466" cy="292" rx="52" ry="86" transform="rotate(38 466 292)"/>
+    <ellipse cx="512" cy="434" rx="46" ry="78" transform="rotate(64 512 434)"/>
+    <ellipse cx="268" cy="374" rx="48" ry="82" transform="rotate(-42 268 374)"/>
+    <ellipse cx="326" cy="298" rx="40" ry="68" transform="rotate(-22 326 298)"/>
+    <ellipse cx="444" cy="344" rx="34" ry="62" transform="rotate(16 444 344)"/>
+  </g>
+  <g fill="#93a788">
+    <ellipse cx="488" cy="330" rx="30" ry="54" transform="rotate(44 488 330)"/>
+    <ellipse cx="300" cy="420" rx="28" ry="50" transform="rotate(-38 300 420)"/>
+  </g>
+  <ellipse cx="400" cy="590" rx="132" ry="30" fill="#b5a58b"/>
+  <path d="M270 590h260l-34 200c-4 24-24 42-48 42h-96c-24 0-44-18-48-42l-34-200Z" fill="url(#pot)"/>
+  <path d="M286 650h228" stroke="#c2b097" stroke-width="9" stroke-linecap="round" opacity=".55"/>
+  <path d="M306 740h168" stroke="#c2b097" stroke-width="7" stroke-linecap="round" opacity=".4"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Slow burn candle">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4eee3"/><stop offset="1" stop-color="#e6ddcd"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c98a4b"/><stop offset=".55" stop-color="#a96833"/><stop offset="1" stop-color="#7f4a23"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffd28a" stop-opacity=".9"/><stop offset="1" stop-color="#ffd28a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3d3022" stop-opacity=".22"/><stop offset="1" stop-color="#3d3022" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="620" cy="240" r="200" fill="#efe4d2" opacity=".7"/>
+  <ellipse cx="400" cy="820" rx="270" ry="46" fill="url(#shadow)"/>
+  <ellipse cx="400" cy="420" rx="240" ry="190" fill="url(#glow)"/>
+  <path d="M282 470h236l-18 300c-2 30-26 52-56 52h-88c-30 0-54-22-56-52l-18-300Z" fill="url(#glass)"/>
+  <ellipse cx="400" cy="470" rx="118" ry="30" fill="#dda96c"/>
+  <ellipse cx="400" cy="470" rx="94" ry="22" fill="#f0c78c"/>
+  <rect x="368" y="438" width="10" height="32" rx="4" fill="#3d2a18"/>
+  <path d="M400 386c28 30 30 58 0 78-30-20-28-48 0-78Z" fill="#f6a73c"/>
+  <path d="M400 405c14 18 15 34 0 46-15-12-14-28 0-46Z" fill="#ffe3a3"/>
+  <rect x="316" y="600" width="168" height="124" rx="8" fill="#f2e7d5" opacity=".94"/>
+  <path d="M344 638h112M344 664h88M344 690h56" stroke="#a08a70" stroke-width="7" stroke-linecap="round"/>
+  <path d="M306 558c62 18 126 18 188 0" fill="none" stroke="#e0b47d" stroke-width="9" stroke-linecap="round" opacity=".45"/>
+</svg>

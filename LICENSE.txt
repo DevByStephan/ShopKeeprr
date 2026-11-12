@@ -1,0 +1,45 @@
+ShopKeeprr — Free Self-Hosted License
+
+Copyright (c) 2026 Stephan Johnson (SJDesigns). All rights reserved.
+
+ShopKeeprr core is free software: you may download it, install it, run it and
+modify it at no cost, for personal or commercial use.
+
+You may:
+
+  • Install and run ShopKeeprr on any number of stores that you own or operate,
+    including stores you build and manage for clients.
+  • Modify the source code for your own use or for a client project.
+  • Charge for your own services around ShopKeeprr, such as installation,
+    customization, hosting, migration and support.
+
+You may not:
+
+  • Resell, redistribute, sublicense or publish the core application, in whole
+    or in substantial part, as-is or as a competing template, script or hosted
+    service.
+  • Distribute the source as a standalone product, or include it in a bundle
+    whose main value is the ShopKeeprr application itself.
+  • Remove or alter copyright notices in the original source.
+
+Extensions, themes and marketplace packages are licensed separately by their
+authors. Paid extensions purchased from ShopKeeprr Store remain subject to the
+terms shown on their product pages. Modules are trusted, executable code and are
+not sandboxed; install only packages from authors you trust.
+
+Third-party components included in vendor/ (Laravel, Symfony, Tailwind,
+Alpine.js and other Composer/npm packages) remain under their own licenses.
+Their license files are included with the packages.
+
+The software is provided "as is", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose and non-infringement. In no event shall the
+author be liable for any claim, damages or other liability, whether in an action
+of contract, tort or otherwise, arising from, out of or in connection with the
+software or its use. You are responsible for hosting, security updates, backups,
+legal compliance and the content you publish.
+
+Support: info@shopkeeprr.com
+Security reports: see SECURITY.md
+Author: Stephan Johnson (SJDesigns)
+Version: 1.1.0

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Ridge ceramic mug">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4efe5"/><stop offset="1" stop-color="#e6ddcd"/>
+    </linearGradient>
+    <linearGradient id="mug" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6d8c3"/><stop offset=".55" stop-color="#d8c6ac"/><stop offset="1" stop-color="#c2ad90"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#4b3f2f" stop-opacity=".22"/><stop offset="1" stop-color="#4b3f2f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="665" cy="205" r="190" fill="#efe5d4" opacity=".7"/>
+  <circle cx="130" cy="790" r="150" fill="#ded2bf" opacity=".45"/>
+  <ellipse cx="400" cy="792" rx="285" ry="52" fill="url(#shadow)"/>
+  <path d="M520 450h58c52 0 86 34 86 82s-34 82-86 82h-40" fill="none" stroke="#c7b294" stroke-width="46" stroke-linecap="round"/>
+  <path d="M520 450h58c52 0 86 34 86 82s-34 82-86 82h-40" fill="none" stroke="#ddcdb7" stroke-width="22" stroke-linecap="round" opacity=".7"/>
+  <path d="M232 430h300l-24 300c-3 34-31 60-65 60H321c-34 0-62-26-65-60l-24-300Z" fill="url(#mug)"/>
+  <path d="M238 438c40 18 284 18 288 0l-5 52H243l-5-52Z" fill="#efe3d1"/>
+  <ellipse cx="382" cy="438" rx="144" ry="30" fill="#f6ecdd"/>
+  <ellipse cx="382" cy="438" rx="118" ry="20" fill="#d6c3a8"/>
+  <ellipse cx="382" cy="438" rx="96" ry="13" fill="#7c5b3f"/>
+  <path d="M262 530c58 22 198 22 256 0" fill="none" stroke="#c3ab8b" stroke-width="10" stroke-linecap="round" opacity=".5"/>
+  <path d="M276 660c54 12 164 12 218 0" fill="none" stroke="#c3ab8b" stroke-width="8" stroke-linecap="round" opacity=".35"/>
+  <path d="M310 726h146" stroke="#b39b7d" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+</svg>

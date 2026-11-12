@@ -1,0 +1,14 @@
+{
+  "name": "Announcement & Promotion Bars",
+  "slug": "announcement-bars",
+  "version": "1.0.0",
+  "type": "plugin",
+  "namespace": "Modules\\AnnouncementBars\\",
+  "source": "src",
+  "provider": "Modules\\AnnouncementBars\\AnnouncementBarsServiceProvider",
+  "description": "Adds dismissible announcement bars and deadline countdown sections to the storefront builder.",
+  "requires": {
+    "shopkeeprr": ">=1.0.0 <2.0.0",
+    "module_api": "1.0"
+  }
+}

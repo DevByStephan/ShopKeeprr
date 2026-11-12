@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-label="A quiet desk with a lamp, books and a notebook">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#143d36"/>
+      <stop offset="1" stop-color="#0b2521"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3c56c" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#dca84c" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b47c50"/>
+      <stop offset="1" stop-color="#8b5a36"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#04110f" flood-opacity=".55"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="760" fill="url(#bg)"/>
+  <circle cx="786" cy="196" r="200" fill="#dca84c" opacity=".09"/>
+  <circle cx="786" cy="196" r="136" fill="none" stroke="#dca84c" stroke-opacity=".25" stroke-width="2"/>
+  <circle cx="168" cy="126" r="8" fill="#7fd8c9" opacity=".6"/>
+  <circle cx="230" cy="96" r="3" fill="#7fd8c9" opacity=".4"/>
+
+  <rect x="0" y="574" width="1000" height="186" fill="url(#wood)"/>
+  <rect x="0" y="574" width="1000" height="12" fill="#c99565" opacity=".65"/>
+
+  <g filter="url(#shadow)">
+    <path d="M636 574V360c0-18 14-32 32-32h10v246Z" fill="#0a1917"/>
+    <path d="M636 574h42v-34h-42Z" fill="#081412"/>
+    <ellipse cx="657" cy="574" rx="86" ry="12" fill="#04110f" opacity=".5"/>
+
+    <path d="M612 344 754 270c26-14 57-3 70 24 13 27 2 58-25 71l-143 73Z" fill="#f0e3cb"/>
+    <path d="M612 344 754 270c10-5 21-6 31-4l-161 82Z" fill="#fff7e8" opacity=".7"/>
+    <path d="M738 368 872 416c12 4 18 18 13 30-5 12-19 18-31 13l-132-51Z" fill="#dca84c"/>
+    <path d="m690 353 28 12" stroke="#0f766e" stroke-width="8" stroke-linecap="round"/>
+
+    <path d="M737 454c0-62 50-112 112-112s112 50 112 112Z" fill="url(#light)" opacity=".35"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="292" y="500" width="260" height="38" rx="6" fill="#164b44"/>
+    <rect x="312" y="464" width="220" height="36" rx="6" fill="#e6d6bf"/>
+    <rect x="332" y="428" width="180" height="36" rx="6" fill="#b65f43"/>
+    <rect x="292" y="538" width="280" height="36" rx="6" fill="#dca84c"/>
+    <rect x="314" y="538" width="236" height="8" fill="#f3d99a" opacity=".6"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="388" y="300" width="150" height="200" rx="5" fill="#f4ecdf"/>
+    <rect x="388" y="300" width="16" height="200" fill="#d8c8b3"/>
+    <path d="M426 341h80M426 366h80M426 391h54M426 430h80M426 455h62" stroke="#b9a68b" stroke-width="4" stroke-linecap="round"/>
+    <rect x="530" y="356" width="105" height="22" rx="4" fill="#0f766e"/>
+    <rect x="530" y="386" width="78" height="8" rx="4" fill="#2f7f74"/>
+  </g>
+
+  <g opacity=".85">
+    <circle cx="864" cy="646" r="48" fill="#c97a5b"/>
+    <circle cx="864" cy="646" r="30" fill="#f6efe4"/>
+    <path d="M100 600c46 0 76 22 92 62-44 0-74-21-92-62Z" fill="#0f766e" opacity=".7"/>
+  </g>
+</svg>
