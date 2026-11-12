@@ -1,8 +1,11 @@
 # ShopKeeprr documentation
 
-This is the maintained public reference for ShopKeeprr 1.0.0. The buyer release, update packages and private downloads are distributed through [ShopKeeprr Store](https://store.shopkeeprr.com/).
+This is the maintained public reference for ShopKeeprr 1.1.0. The free core
+release is downloaded from [shopkeeprr.com](https://shopkeeprr.com/). Extension
+packages and private downloads are distributed through
+[ShopKeeprr Store](https://store.shopkeeprr.com/).
 
-## Buyer guides
+## User guides
 
 - [Installation](installation.md)
 - [Updating and rollback](updates.md)
@@ -13,6 +16,7 @@ This is the maintained public reference for ShopKeeprr 1.0.0. The buyer release,
 
 ## Developer guides
 
+- [Build a plugin in 15 minutes](hello-world.md)
 - [Themes](themes.md)
 - [Modules](modules.md)
 - [Marketplace listings](marketplace.md)
@@ -25,7 +29,9 @@ This is the maintained public reference for ShopKeeprr 1.0.0. The buyer release,
 
 ## Offline reference
 
-The [ShopKeeprr Installation & FAQ PDF](../ShopKeeprr-Installation-and-FAQ.pdf) is kept for offline buyer reference. These Markdown guides are the maintained documentation.
+The [ShopKeeprr Installation & FAQ PDF](../ShopKeeprr-Installation-and-FAQ.pdf)
+is kept for offline reference. These Markdown guides are the maintained
+documentation.
 
 ## Support and security
 

@@ -1,6 +1,6 @@
 # Updating ShopKeeprr
 
-ShopKeeprr 1.0.0 and newer support signed updates. A release is downloaded from the vendor's update service, verified, backed up and applied with a rollback path. Update packages are private and are never published in this repository.
+ShopKeeprr 1.1.0 includes signed update tooling, but updates are off by default until the vendor publishes a manifest host. When enabled, a release is downloaded from the update service, verified, backed up and applied with a rollback path. Core update packages are not committed to this repository; extension updates remain in the Store.
 
 ## Before updating
 
@@ -51,4 +51,4 @@ Modules are not updated by ShopKeeprr. A module can declare the ShopKeeprr and P
 
 ## Release archives
 
-The licensed update package is available only through your ShopKeeprr Store account. This repository intentionally contains no update ZIP, signing key or release asset.
+Core updates can be delivered by the vendor's signed update service once that host is published. Extension updates remain available through your ShopKeeprr Store account. This repository intentionally contains no update ZIP, signing key or release asset.

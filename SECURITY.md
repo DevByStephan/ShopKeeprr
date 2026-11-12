@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-Security fixes are applied to the current public release and the latest supported update path. This repository contains documentation and examples; the licensed application is distributed through [ShopKeeprr Store](https://store.shopkeeprr.com/).
+Security fixes are applied to the current public release and the latest supported update path. This repository contains documentation and examples; the free core application is distributed through [shopkeeprr.com](https://shopkeeprr.com/), and extensions through [ShopKeeprr Store](https://store.shopkeeprr.com/).
 
 ## Reporting a vulnerability
 

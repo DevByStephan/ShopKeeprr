@@ -1,6 +1,6 @@
 # Hello ShopKeeprr module
 
-A minimal module that adds a signed-in account page. It demonstrates the manifest, provider, route and view conventions used by ShopKeeprr 1.0.0.
+A minimal module that adds a signed-in account page. It demonstrates the manifest, provider, route and view conventions used by ShopKeeprr 1.1.0.
 
 ## Try it on staging
 

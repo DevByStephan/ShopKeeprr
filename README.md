@@ -4,7 +4,7 @@
 
 <h1 align="center">ShopKeeprr</h1>
 
-<p align="center"><strong>Public documentation and developer examples for ShopKeeprr 1.0.0.</strong></p>
+<p align="center"><strong>Public documentation and developer examples for ShopKeeprr 1.1.0.</strong></p>
 
 <p align="center">
   <a href="https://shopkeeprr.com/">Website</a> ·
@@ -17,12 +17,34 @@
 
 ## What is ShopKeeprr?
 
-ShopKeeprr is a self-hosted commerce platform built on Laravel. A licensed installation includes a storefront, admin workspace, retail/B2B/subscription/multi-vendor store models, four storefront themes, a visual storefront builder, an extension system and signed updates.
+ShopKeeprr is a free, self-hosted commerce platform built on Laravel. The core
+includes a storefront, admin workspace, retail/B2B/subscription/multi-vendor
+store models, four storefront themes, a visual storefront builder, an extension
+system and signed updates.
 
-This repository is the public developer and buyer reference for **version 1.0.0**. It is **documentation and examples only**. It does not contain the ShopKeeprr application source, the paid release archive, license keys, update packages or customer data. The licensed application and its updates are distributed through [ShopKeeprr Store](https://store.shopkeeprr.com/).
+This repository is the public developer and documentation reference for
+**version 1.1.0**. It contains documentation and examples only. The free core
+application is downloaded from [download.shopkeeprr.com](https://download.shopkeeprr.com/); this
+repository does not contain the application archive, customer data or private
+extension packages. Extensions are distributed through
+[ShopKeeprr Store](https://store.shopkeeprr.com/).
 
-**Current release:** 1.0.0  
+**Current release:** 1.1.0 — free core
+**Download:** <https://download.shopkeeprr.com/>
 **Stack:** Laravel 13 · PHP 8.3+ · MySQL 8 / SQLite · Vite · Tailwind CSS · Alpine.js
+
+## What is new in 1.1
+
+- Store account linking from the Admin marketplace using a one-time device code.
+- The Store catalog and the connected account's library appear in Admin.
+- One-click installs verify the package SHA-256 checksum and install modules
+  disabled until an administrator enables them.
+- Manual ZIP upload remains available as the offline fallback.
+- Marketplace scanner 1.1 keeps critical execution findings blocking while
+  allowing lower-risk warnings, including console and command shell calls.
+- The core is free at launch and is downloaded directly from shopkeeprr.com.
+
+See [RELEASE-NOTES-1.1.0.md](RELEASE-NOTES-1.1.0.md) for the full release notes.
 
 ## Start here
 
@@ -34,19 +56,21 @@ This repository is the public developer and buyer reference for **version 1.0.0*
 | [Storefront builder](docs/storefront-builder.md) | Blocks, drafts, previews and safe input |
 | [Themes](docs/themes.md) | Presets, template resolution, custom themes and the template editor |
 | [Modules](docs/modules.md) | Manifests, providers, routes, migrations and compatibility |
-| [Marketplace](docs/marketplace.md) | Listings, review, licensing, commission and payouts |
+| [Marketplace](docs/marketplace.md) | Linking, one-click installs, listings, review and payouts |
 | [Packaging releases](docs/releases.md) | Versioning, ZIP contents, scanning and private downloads |
 | [Production checklist](docs/production.md) | HTTPS, database, mail, backups and go-live checks |
 | [Troubleshooting](docs/troubleshooting.md) | Common installation, module, email and checkout issues |
 
-The full [Installation & FAQ PDF](ShopKeeprr-Installation-and-FAQ.pdf) is retained for offline buyer reference.
+The [Installation & FAQ PDF](ShopKeeprr-Installation-and-FAQ.pdf) is retained for
+offline reference.
 
 ## Developer examples
 
 - [Hello ShopKeeprr module](examples/plugin/hello-shopkeeprr/README.md) — a minimal, signed-in account page built as a module with a manifest, provider, route and Blade view.
 - [Atelier Example theme](examples/theme/atelier-example/README.md) — a preset-style theme with palette metadata and storefront view overrides.
 
-Examples are starting points. Test every extension on a staging store before installing it on a live shop.
+Examples are starting points. Test every extension on a staging store before
+installing it on a live shop.
 
 ## Repository contents
 
@@ -62,7 +86,15 @@ CHANGELOG.md          Public release history
 
 ## Release packages
 
-No application ZIP, update package or paid download is published in this repository. Those files are delivered privately through the customer's [ShopKeeprr Store account](https://store.shopkeeprr.com/account/downloads). Do not upload a buyer archive, `.env`, license signing key, customer export or database file to GitHub.
+The free core ZIP is available from
+[download.shopkeeprr.com](https://download.shopkeeprr.com/). No
+application source, `.env`, signing key, customer export or database file is
+published in this repository.
+
+Marketplace extension packages remain private to the Store and are delivered
+through the customer's [ShopKeeprr Store account](https://store.shopkeeprr.com/).
+Do not upload an application archive, an extension package, credentials or customer
+data to GitHub.
 
 ## Support
 
@@ -73,4 +105,6 @@ No application ZIP, update package or paid download is published in this reposit
 
 ## License
 
-Documentation and example templates are provided under the terms in [LICENSE](LICENSE). The ShopKeeprr application is commercial software and is governed by the license included with the buyer package.
+The free core application is governed by the license included with its download.
+Documentation and example templates are provided under the terms in
+[LICENSE](LICENSE).

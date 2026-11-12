@@ -1,6 +1,6 @@
 # Marketplace
 
-Approved sellers can list modules, themes and storefront components for ShopKeeprr stores. Listings, releases and payouts are managed through the ShopKeeprr Store developer workspace.
+The ShopKeeprr core is free. Approved sellers can list modules, themes and storefront components for ShopKeeprr stores. Listings, releases and payouts are managed through the ShopKeeprr Store developer workspace.
 
 ## Seller application
 
@@ -21,18 +21,29 @@ The optional application fee is non-refundable. When it is paid, the PayPal paye
 4. Confirm the compatibility range and release notes.
 5. Submit the listing for review.
 
-A listing is not public until the marketplace team publishes it. The current release becomes the default download for licensed buyers.
+A listing is not public until the marketplace team publishes it. The current release becomes the default download for customers.
 
 ## Licensing
 
-The marketplace handles license keys, activation limits and private downloads for paid orders. Your package does not need its own license server or entitlement database.
+The core application is free to download. For paid extensions, the marketplace handles license keys, activation limits and private downloads. Your package does not need its own license server or entitlement database.
 
 - Use the product slug and version in package metadata.
-- Do not hard-code buyer credentials.
-- Direct buyers to their ShopKeeprr account for licenses and downloads.
-- Do not redistribute a buyer's license or signed download URL.
+- Do not hard-code customer credentials.
+- Direct customers to their ShopKeeprr account for licenses and downloads.
+- Do not redistribute a customer's license or signed download URL.
 
 Internal license-service administration is not part of this public repository.
+
+## Installing from the platform
+
+1. In Admin → Marketplace, choose **Connect Store**.
+2. Sign in to the Store and approve the one-time device code.
+3. Browse the catalog, choose an extension and select **Install**.
+
+The platform downloads the package server-side, verifies its SHA-256 checksum,
+validates the manifest slug and installs the module disabled. Enable it from
+Plugins when you are ready. Manual ZIP upload remains available when the store
+cannot reach the Store.
 
 ## Commission and payouts
 
@@ -48,6 +59,6 @@ Sellers must have a verified payout email. The marketplace team sends the pendin
 
 ## Review and support
 
-The review team checks the listing, package contents, compatibility and security scan. A critical finding blocks the release. Warnings are visible to the seller and the review team.
+The review team checks the listing, package contents, compatibility and security scan. Scanner 1.1 blocks critical execution findings. Warnings are visible to the seller and the review team; console and command shell calls are warnings so legitimate developer tooling is not rejected. The marketplace is open at launch and can be tightened later without changing the install contract.
 
 Questions about a listing, release or payout: <info@shopkeeprr.com>. Include the listing slug and version. Never send a private signing key, full license key or customer data.

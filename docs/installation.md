@@ -1,6 +1,6 @@
 # Installation
 
-ShopKeeprr is a Laravel application. Download the licensed release from [ShopKeeprr Store](https://store.shopkeeprr.com/), then install it on a server you control. No application ZIP is published in this repository.
+ShopKeeprr is a Laravel application. Download the free core release from [shopkeeprr.com](https://shopkeeprr.com/), then install it on a server you control. No application ZIP is published in this repository.
 
 ## Requirements
 
@@ -12,11 +12,11 @@ ShopKeeprr is a Laravel application. Download the licensed release from [ShopKee
 - Outbound HTTPS for updates. The browser installer and clean-process migrations use `proc_open`; documented fallbacks exist when a host disables it.
 - A writable `bootstrap/cache/` and a database user limited to the store database.
 
-The buyer package includes the built front-end assets, so Node is not required to run the store.
+The release package includes the built front-end assets, so Node is not required to run the store.
 
 ## Browser installer
 
-1. Upload the licensed release so `public/` is the web root.
+1. Upload the release package so `public/` is the web root.
 2. Create an empty MySQL database, or make `database/` writable for SQLite.
 3. Open `https://your-store.com/install.php`.
 4. Complete the server check, database step and store/owner account step.

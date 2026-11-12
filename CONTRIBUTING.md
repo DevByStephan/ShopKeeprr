@@ -19,9 +19,9 @@ This repository is for public documentation and example templates. The ShopKeepr
 
 ## Do not submit
 
-- Application source or buyer release files.
+- Application source or application release files.
 - `.env`, API keys, license keys, signing keys or customer exports.
-- ZIP, update or paid release archives.
+- ZIP, update or release archives, including paid extension packages.
 - Unrelated planning, pricing experiments or private business content.
 - Content unrelated to the ShopKeeprr public release.
 
