@@ -154,6 +154,9 @@ data to GitHub.
 - Documentation site: <https://shopkeeprr.org/>
 - Email: <info@shopkeeprr.com>
 - Security reports: see [SECURITY.md](SECURITY.md)
+- Optional tips: <https://buymeacoffee.com/devbystephan>
+
+Tips are optional and do not purchase a license, priority support, or any feature.
 
 ## License
 
