@@ -298,3 +298,13 @@ routes/storefront.php      Public routes
 routes/admin.php           Authenticated admin routes
 routes/webhooks.php        Stripe and PayPal webhooks
 ```
+
+---
+
+## Support ShopKeeprr
+
+The core is free to download and self-host. If ShopKeeprr saves you time, you can support ongoing development with an optional tip.
+
+[Buy Me a Coffee →](https://buymeacoffee.com/devbystephan)
+
+Tips are optional and do not purchase a license, priority support, or any feature.
