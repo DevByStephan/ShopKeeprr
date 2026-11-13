@@ -6,13 +6,17 @@ features and adds a direct connection to the ShopKeeprr Store marketplace.
 ## Download
 
 - Free core ZIP: <https://download.shopkeeprr.com/>
+- GitHub release assets: <https://github.com/DevByStephan/ShopKeeprr/releases/tag/v1.1.0>
 - Store and extensions: <https://store.shopkeeprr.com/>
 - Documentation: <https://shopkeeprr.org/>
+- Live demo: <https://demo.shopkeeprr.com/>
 
 The core is free. Marketplace extensions may be free or paid.
 
 ## Highlights
 
+- Marketplace details open in a centered in-page `<dialog>` with the catalog,
+  installed state and manage action without losing the current filters.
 - Store account linking from Admin → Marketplace with a one-time device code.
 - Store catalog and owned-extension library loaded in Admin.
 - One-click extension installs: server-side download, SHA-256 checksum
@@ -54,6 +58,7 @@ themes and store data are unchanged.
 - Store: 77 tests passed, 649 assertions.
 - All changed PHP files pass `php -l`.
 
-This repository remains documentation and examples. It does not contain the
-application ZIP, `.env`, private extension packages, customer data or signing
-material.
+The complete core ZIP, including `vendor/`, is attached to the GitHub release.
+The application source is published on the `1.1` branch. This default branch
+remains documentation and examples; it does not contain `.env`, private
+extension packages, customer data or signing material.
