@@ -1,0 +1,14 @@
+{
+  "summary": "Every free plugin concept from the original workshop list is now published as an installable Store package. The workshop list is intentionally empty; new concepts belong here only until they have a working package and release.",
+  "removed_duplicates": [
+    {
+      "name": "Back-in-Stock Notifications",
+      "reason": "Customer Wishlist already includes back-in-stock and price-drop signals ready for email."
+    },
+    {
+      "name": "Local Pickup & Delivery Scheduler",
+      "reason": "The installable Local Pickup & Delivery package is already published in the Store catalog."
+    }
+  ],
+  "ideas": []
+}

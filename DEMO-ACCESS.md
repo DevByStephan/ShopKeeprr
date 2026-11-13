@@ -30,7 +30,7 @@ The admin can inspect every screen. Settings, products, orders, customers, theme
 
 ## Hosted deployment
 
-The permanent demo runs from `/home2/xwlwrcmy/demo.shopkeeprr.com` on BlueHost, with its own SQLite database at `database/database.sqlite`. Its root `.htaccess` bridges requests to `public/`; the application is still a normal Laravel app.
+The permanent demo runs from `/home2/xwlwrcmy/demo.shopkeeprr.com` on BlueHost, with its own SQLite database at `database/database.sqlite`. Its root `.htaccess` bridges requests to `public/`; the application is still a normal Laravel app. The demo includes the in-page marketplace details dialog so the listing states can be inspected without leaving the marketplace.
 
 The hosted environment uses:
 
@@ -85,14 +85,14 @@ Do not copy a database that contains changes you do not want visitors to see.
 
 ## Release
 
-The current buyer archive is:
+The current public release is ShopKeeprr 1.1.0:
 
 ```text
-NexusCart\dist\ShopKeeprr-1.0.0.zip
+https://download.shopkeeprr.com/
 ```
 
-SHA-256: `36a9726b52b69d7c730921fc4718c4491fd3e1f48a80b7561a9c991d9bad114a`
+SHA-256: `edf1d2ca7ee8f09011d92015a7a46601a3007184415bd739c52642ee53dfd9a7`
 
-This is the only ShopKeeprr release archive in `NexusCart\dist`. The old `NexusCart-1.0.0` and `NexusCart-1.1.0` archives and the 1.1.0 update package were removed.
+The buyer archive is built without tests, local databases, logs, demo credentials, the Store patch or the local demo configuration.
 
 Do not ship this demo folder, its `.env`, its SQLite database or `storage/app/demo-credentials.txt` to buyers.

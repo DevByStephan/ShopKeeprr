@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Services\Marketplace\MarketplaceException;
 use App\Services\Marketplace\MarketplaceManager;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
 use Tests\TestCase;
@@ -26,6 +27,7 @@ class MarketplaceTest extends TestCase
             'marketplace.allow_http' => false,
         ]);
 
+        Cache::flush();
         @mkdir(base_path('modules'), 0775, true);
     }
 
@@ -140,6 +142,72 @@ class MarketplaceTest extends TestCase
         @unlink($zipPath);
     }
 
+    public function test_marketplace_listing_opens_details_in_page_and_exposes_install_action(): void
+    {
+        $this->connection();
+
+        Http::fake([
+            'https://store.shopkeeprr.com/api/v1/marketplace/catalog' => Http::response([
+                'data' => [[
+                    'type' => 'plugin',
+                    'name' => 'Paid Example',
+                    'slug' => 'paid-example',
+                    'tagline' => 'Adds a useful checkout extra.',
+                    'description' => 'A longer description for the details dialog.',
+                    'features' => ['Adds a widget', 'Keeps a log'],
+                    'price_cents' => 2900,
+                    'currency' => 'USD',
+                    'cover_url' => null,
+                    'version' => '1.2.0',
+                    'purchase_url' => 'https://store.shopkeeprr.com/products/paid-example',
+                    'developer' => 'ShopKeeprr',
+                    'release' => [
+                        'version' => '1.2.0',
+                        'scan_status' => 'clean',
+                        'file_size' => 2048,
+                        'published_at' => now()->toIso8601String(),
+                    ],
+                ]],
+            ]),
+            'https://store.shopkeeprr.com/api/v1/marketplace/library' => Http::response([
+                'success' => true,
+                'data' => [],
+            ]),
+        ]);
+
+        $admin = User::factory()->create(['role' => 'admin']);
+
+        $this->actingAs($admin)
+            ->get(route('admin.marketplace.index'))
+            ->assertOk()
+            ->assertSee('data-marketplace-details', false)
+            ->assertSee('marketplace-detail', false)
+            ->assertSee('data-detail-install', false)
+            ->assertSee('Check purchase', false)
+            ->assertSee('A longer description for the details dialog.', false);
+    }
+
+    public function test_admin_can_check_purchase_ownership_without_reloading_the_marketplace(): void
+    {
+        $this->connection();
+
+        Http::fake([
+            'https://store.shopkeeprr.com/api/v1/marketplace/library' => Http::response([
+                'success' => true,
+                'data' => [
+                    ['slug' => 'paid-example'],
+                ],
+            ]),
+        ]);
+
+        $admin = User::factory()->create(['role' => 'admin']);
+
+        $this->actingAs($admin)
+            ->postJson(route('admin.marketplace.ownership'))
+            ->assertOk()
+            ->assertExactJson(['owned' => ['paid-example']]);
+    }
+
     public function test_a_checksum_mismatch_stops_installation(): void
     {
         $zipPath = $this->makeModuleZip();
@@ -176,6 +244,20 @@ class MarketplaceTest extends TestCase
         } finally {
             @unlink($zipPath);
         }
+    }
+
+    private function connection(): MarketplaceConnection
+    {
+        return MarketplaceConnection::query()->create([
+            'store_url' => 'https://store.shopkeeprr.com',
+            'site_id' => (string) Str::uuid(),
+            'site_name' => 'Test Store',
+            'account_name' => 'Store Owner',
+            'account_email' => 'owner@example.com',
+            'access_token' => 'sk_site_test-token-1234',
+            'token_last_four' => '1234',
+            'connected_at' => now(),
+        ]);
     }
 
     private function makeModuleZip(): string

@@ -158,6 +158,25 @@ Do not add an unknown public key to `SHOPKEEPRR_UPDATE_PUBLIC_KEY`. That would l
 
 ---
 
+## Existing 1.0 stores and the rotated update key (one-time)
+
+The 1.0 build pinned an update public key whose private half was not retained. The 1.1 package uses a newly generated key. A 1.0 store still holding the old pinned key cannot verify a manifest signed with the new key, so choose one of these one-time paths:
+
+**Keep the one-click updater**
+
+1. Back up `.env`.
+2. Copy the `public_key` value from `config/nexuscart.php` in the 1.1 package into `.env` as `SHOPKEEPRR_UPDATE_PUBLIC_KEY=<value>`, replacing any old value.
+3. Run `php artisan optimize:clear` so the old configuration cache is discarded.
+4. Open **Admin → Updates**, or run `php artisan shopkeeprr:update --check`, and install 1.1.0 normally. The 1.1 package pins the same new key, so this override is only needed for the transition.
+
+**Full install instead**
+
+Download the 1.1 full package and replace the application files while keeping `.env`, `storage/`, `modules/`, `public/uploads/`, custom theme files and `database/database.sqlite`. Then run `php artisan migrate --force` and `php artisan optimize:clear`.
+
+Only use the public key from the official 1.1 package. Do not accept a key sent by a third party.
+
+---
+
 ## Troubleshooting
 
 **"Could not reach the update server"** — your host may block outbound HTTPS. Allow `updates.shopkeeprr.com` (or the vendor's configured host), or run the CLI. The store is unchanged.

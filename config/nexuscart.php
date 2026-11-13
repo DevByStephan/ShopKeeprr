@@ -111,7 +111,7 @@ return [
          | Base64-encoded SubjectPublicKeyInfo (DER) for the RSA public key.
          | The matching private key is held by the vendor, never shipped.
          */
-        'public_key' => shopkeeprr_env('UPDATE_PUBLIC_KEY', 'MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAoygX9UwePQMJNRIMeCMLeZyjtE/HHty6RjfAU/OSo09a7z7S7AMzphZQ7wiJKaT2VJMDUZrdI+F2Go1QSM+VXV38tO4N/HA2LhMZakeIlnTqsKP11EcL+8pfYkJYGBUSVXx6IejOR4gSEpx0/PPDwlqPdYcQ21S/ZjDMwW9pKjRDpmzRynx+HdshZuh7vEIwyagZQHojttJdHwhkwNL7vTY8VBDaYf+9TPZEq0EiHSb1cQjMHgEMnfM52VOQttqOzQDIX+A+F0g8RHIpH3HQwNuJ0qDQiPG9Du4hwwtFfTP578SokVur+hwYtnvo2jBNKhak/2cp8RC/zj9S/H6aE7E19o8aA+l0FwpOpuLrVtQaKsq/tYPGOf9OSKc09Xk65+MuEaHZdO0N4UfQfCuK5uiIMMVIPToKnOQO+3k224+V3mWOgP21ZF+sltuFq72aU9yKDJiSzWNTSBXEkB8q6gvgn1uqGmGMj0cTaYczFBphEIhpCQSuhwSzxgdTn8rFAgMBAAE='),
+        'public_key' => shopkeeprr_env('UPDATE_PUBLIC_KEY', 'MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA0vBEZL2P8XxSFacHFr8wMFtzu/suL6ZoeV1ZMtnaskQ+XVz9RrgLedbxl5xeuJyRPqwGA5JqsXFBMPEHhjwaG6qQivzQ41Zc8FFTZ4iD9/0H6bRRKkusnkSkRnUyylqMH5RNV8kK1i1XiFPCknhzO8ejavsPA/rFa2+6VDz/KacB79Aa9+UzDigP1nZQR7QgppzzbRugqq9fxYz5vraPq9tI83QDpJn0NJJP6WTIpZxeOD4TI01p7+BW6f5wYPsqdv8PoUiSa96rrq06xIyXOc4VoogHk0bjYKwYS0UkCTVQOPHxL1LphbI4dJUyHIdckeCC0KKMt383OziSIX0TfI7FNbDR6kNwAU9DxDuTNoH6bzlAho59N6xuJPta7FgGbKZ0zxnxbysa6TZoBQWdBOA4/PlJrii5lu8ZMRHUsofiGc/LNo4yPa/Iunz0QmGtN938hdMbPKOEePA+daJgCPwXJQtdMOYQnc3PLXQ7Q+REsQVpBELwWfedI/AM3bcxAgMBAAE='),
 
         'timeout' => (int) shopkeeprr_env('UPDATE_TIMEOUT', 20),
 

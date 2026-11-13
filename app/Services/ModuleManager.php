@@ -267,8 +267,21 @@ class ModuleManager
     {
         $migrations = $directory.'/database/migrations';
 
-        if (is_dir($migrations)) {
-            Artisan::call('migrate', ['--path' => $migrations, '--force' => true]);
+        if (! is_dir($migrations)) {
+            return;
+        }
+
+        // Migrate's --path is resolved from the application base. Passing an
+        // absolute path works on some hosts but silently finds no migrations
+        // on Windows and a few shared-hosting PHP builds, so keep it relative.
+        $path = str_starts_with($migrations, base_path())
+            ? ltrim(substr($migrations, strlen(base_path())), '/\\')
+            : $migrations;
+
+        $status = Artisan::call('migrate', ['--path' => $path, '--force' => true]);
+
+        if ($status !== 0) {
+            throw new RuntimeException('The module migrations could not be applied: '.trim(Artisan::output()));
         }
     }
 

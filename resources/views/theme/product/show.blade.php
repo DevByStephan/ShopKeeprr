@@ -153,6 +153,7 @@
             @endif
 
             @includeIf('wishlist::button', ['product' => $product, 'class' => 'mt-4'])
+            @includeIf('product-comparison::product-button', ['product' => $product])
 
             @if($product->sku)
                 <div class="mt-5 text-xs text-[var(--muted)]">SKU: {{ $product->sku }}</div>
@@ -162,6 +163,9 @@
 
     @includeIf('bundles::product-section', ['product' => $product])
     @includeIf('reviews::product-section', ['product' => $product])
+    @includeIf('product-questions-answers::product-section', ['product' => $product])
+    @includeIf('preorders-backorders::product-section', ['product' => $product])
+    @includeIf('recently-viewed-products::tracker', ['product' => $product])
 </div>
 
 @if($related->isNotEmpty())

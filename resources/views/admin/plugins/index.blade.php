@@ -20,6 +20,9 @@
                         <div class="mt-2 text-[11px] text-[#8a9892]">v{{ $module->version }} · {{ $module->slug }}</div>
                     </div>
                     <div class="flex items-center gap-2">
+                        @if(\Illuminate\Support\Facades\Route::has($module->slug.'.admin.index'))
+                            <a href="{{ route($module->slug.'.admin.index') }}" class="btn-secondary !px-4 !py-2 text-xs">Manage</a>
+                        @endif
                         <form method="post" action="{{ route('admin.plugins.toggle', $module) }}">
                             @csrf
                             @method('PATCH')

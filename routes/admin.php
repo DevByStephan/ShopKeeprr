@@ -98,6 +98,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
             Route::get('link/status', [MarketplaceController::class, 'status'])->name('status');
             Route::post('disconnect', [MarketplaceController::class, 'disconnect'])->name('disconnect');
             Route::post('refresh', [MarketplaceController::class, 'refresh'])->name('refresh');
+            Route::post('ownership', [MarketplaceController::class, 'ownership'])->name('ownership');
             Route::post('install', [MarketplaceController::class, 'install'])->name('install');
         });
 
