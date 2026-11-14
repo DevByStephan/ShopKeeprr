@@ -154,7 +154,9 @@ data to GitHub.
 - Documentation site: <https://shopkeeprr.org/>
 - Email: <info@shopkeeprr.com>
 - Security reports: see [SECURITY.md](SECURITY.md)
-- Optional tips: <https://buymeacoffee.com/devbystephan>
+- ☕ **[Buy Me a Coffee](https://buymeacoffee.com/devbystephan)** — Leave a quick tip to support updates and maintenance
+- 💳 **[Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=5ELD96RNSK38N)** — Direct contribution via PayPal
+- 🛒 **[ShopKeeprr Store](https://store.shopkeeprr.com)** — Browse official extensions, payment gateways, and pro modules
 
 Tips are optional and do not purchase a license, priority support, or any feature.
 
