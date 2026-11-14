@@ -21,7 +21,7 @@ Retail, B2B wholesale, subscriptions and multi-vendor — one admin, one checkou
 
 <p align="center">
   If ShopKeeprr is useful or you plan to try it, please
-  <a href="https://github.com/DevByStephan/ShopKeeprr/stargazers">give the repo a ⭐</a>
+  <a href="https://github.com/DevByStephan/ShopKeeprr">give the repo a ⭐</a>
   — it helps other store owners find it.
 </p>
 
