@@ -1,2 +1,3 @@
 # Optional support for ShopKeeprr development.
-custom: ["https://buymeacoffee.com/devbystephan"]
+buy_me_a_coffee: devbystephan
+custom: ['https://www.paypal.com/donate/?hosted_button_id=5ELD96RNSK38N', 'https://store.shopkeeprr.com']
