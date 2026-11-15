@@ -165,3 +165,4 @@ Tips are optional and do not purchase a license, priority support, or any featur
 The free core application is governed by the license included with its download.
 Documentation and example templates are provided under the terms in
 [LICENSE](LICENSE).
+
