@@ -1,5 +1,37 @@
 # Changelog
 
+## 1.1.2 — WooCommerce tax migration and Freeware
+
+### Platform
+
+- Added WooCommerce tax-rate migration from the standard tax-rate CSV export
+  and from the read-only REST API.
+- Rates are matched by country, state and name so re-running a migration updates
+  the same rate instead of creating duplicates.
+- Mapped WooCommerce `prices_include_tax` and `shipping_tax_class` settings and
+  reported unsupported tax options without writing them.
+- Added tax counts to dry runs and the migration summary.
+- Linked the storefront and admin "Powered by ShopKeeprr" attribution to
+  <https://shopkeeprr.com/>.
+- Rebuilt the 1.1.2 package with the linked attribution; the version remains
+  1.1.2 and the current checksum is published on the download site.
+
+### Public documentation
+
+- Updated the public reference, quick-start and examples to 1.1.2.
+- Documented the Freeware distribution label and the 1.1.2 tax migration.
+
+## 1.1.1 — WooCommerce migration
+
+### Platform
+
+- Added CSV/ZIP and read-only REST API migration for WooCommerce products,
+  variations, customers and orders.
+- Added dry runs, idempotent re-runs, downloadable error reports and migration
+  history.
+- Added `woocommerce_migrations` and `woocommerce_connections` tables and
+  nullable WooCommerce address columns on users.
+
 ## 1.1.0 — Free launch and Store marketplace
 
 ### Platform

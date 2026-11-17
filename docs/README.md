@@ -1,6 +1,6 @@
 # ShopKeeprr documentation
 
-This is the maintained public reference for ShopKeeprr 1.1.0. The free core
+This is the maintained public reference for ShopKeeprr 1.1.2. The free core
 release is downloaded from [shopkeeprr.com](https://shopkeeprr.com/). Extension
 packages and private downloads are distributed through
 [ShopKeeprr Store](https://store.shopkeeprr.com/).

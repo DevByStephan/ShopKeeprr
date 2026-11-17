@@ -37,11 +37,11 @@ system and signed updates.
 The application source lives on the [1.1 branch](https://github.com/DevByStephan/ShopKeeprr/tree/1.1).
 This default branch is the public documentation and developer reference. The
 complete package, including `vendor/`, is attached to the
-[v1.1.0 GitHub Release](https://github.com/DevByStephan/ShopKeeprr/releases/tag/v1.1.0)
+[v1.1.2 GitHub Release](https://github.com/DevByStephan/ShopKeeprr/releases/tag/v1.1.2)
 and available from [download.shopkeeprr.com](https://download.shopkeeprr.com/).
 Extensions are distributed through [ShopKeeprr Store](https://store.shopkeeprr.com/).
 
-**Current release:** 1.1.0 — free core<br>
+**Current release:** 1.1.2 — freeware core<br>
 **Stack:** Laravel 13 · PHP 8.3+ · MySQL 8 / SQLite · Vite · Tailwind CSS · Alpine.js
 
 ## Try it locally in 60 seconds
@@ -81,20 +81,25 @@ The marketplace uses an in-page `<dialog>`, keeps the catalog and owned
 extensions in one place, and installs approved plugins disabled until an
 administrator enables them.
 
-## What is new in 1.1
+## What is new in 1.1.2
 
-- Marketplace details open in a centered in-page `<dialog>`; no reload and no
-  lost filters or scroll position.
-- Store account linking from Admin → Marketplace with a one-time device code.
-- Store catalog and the connected account's library appear in Admin.
-- One-click installs verify the package SHA-256 checksum and install modules
-  disabled until an administrator enables them.
-- Manual ZIP upload remains available as the offline fallback.
-- Marketplace scanner 1.1 keeps critical execution findings blocking while
-  allowing lower-risk warnings, including console and command shell calls.
-- The core is free at launch and is downloaded directly from shopkeeprr.com.
+- WooCommerce tax rates are detected from the standard tax-rate CSV export and
+  imported through the REST API.
+- Tax rates are matched by country, state and name, so re-running a migration
+  updates the same rate instead of creating duplicates.
+- `prices_include_tax` and `shipping_tax_class` map to ShopKeeprr's prices-include-tax
+  and shipping-taxable settings.
+- Dry runs report tax counts and unsupported WooCommerce tax options without
+  writing either.
+- ShopKeeprr is positioned as freeware: the core is free to download, run and
+  modify with source included. Redistribution and resale remain restricted.
+- Storefront and admin attribution now links to
+  [shopkeeprr.com](https://shopkeeprr.com/).
 
-See [RELEASE-NOTES-1.1.0.md](RELEASE-NOTES-1.1.0.md) for the full release notes.
+The 1.1 line also includes the WooCommerce product, variation, customer and
+order migration from 1.1.1, plus the Store marketplace, one-click installs and
+signed updates from 1.1.0. See
+[RELEASE-NOTES-1.1.2.md](RELEASE-NOTES-1.1.2.md) for the current release notes.
 
 ## Start here
 
@@ -138,7 +143,7 @@ CHANGELOG.md          Public release history
 ## Release packages
 
 The complete free core ZIP, including `vendor/`, is attached to the
-[v1.1.0 GitHub Release](https://github.com/DevByStephan/ShopKeeprr/releases/tag/v1.1.0)
+[v1.1.2 GitHub Release](https://github.com/DevByStephan/ShopKeeprr/releases/tag/v1.1.2)
 and available from [download.shopkeeprr.com](https://download.shopkeeprr.com/).
 No `.env`, signing key, customer export or database file is published in this
 repository.

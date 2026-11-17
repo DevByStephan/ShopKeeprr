@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# ShopKeeprr 1.1 local demo: download the release, use SQLite, seed data, serve.
+# ShopKeeprr 1.1.2 local demo: download the release, use SQLite, seed data, serve.
 # Usage: curl -fsSL https://raw.githubusercontent.com/DevByStephan/ShopKeeprr/main/quickstart.sh | bash
 set -euo pipefail
 
-VERSION="1.1.0"
+VERSION="1.1.2"
 ZIP_URL="${SHOPKEEPRR_ZIP_URL:-https://github.com/DevByStephan/ShopKeeprr/releases/download/v${VERSION}/shopkeeprr-${VERSION}.zip}"
 TARGET="${SHOPKEEPRR_QUICKSTART_DIR:-$PWD/shopkeeprr}"
 if [ -n "${SHOPKEEPRR_PORT:-}" ]; then

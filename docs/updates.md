@@ -1,6 +1,6 @@
 # Updating ShopKeeprr
 
-ShopKeeprr 1.1.0 includes signed update tooling, but updates are off by default until the vendor publishes a manifest host. When enabled, a release is downloaded from the update service, verified, backed up and applied with a rollback path. Core update packages are not committed to this repository; extension updates remain in the Store.
+ShopKeeprr 1.1.2 includes signed update tooling, but updates are off by default until the vendor publishes a manifest host. When enabled, a release is downloaded from the update service, verified, backed up and applied with a rollback path. Core update packages are not committed to this repository; extension updates remain in the Store.
 
 ## Before updating
 
