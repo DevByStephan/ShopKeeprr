@@ -111,7 +111,7 @@ We may collect:
 - Marketing data: email preferences and consent records.
 - Support data: messages you send to us and the information you choose to include.
 
-If the store owner enables installation tracking, our store software sends the software vendor a separate installation record containing a pseudonymous install ID, the store URL, administrator email, software version, store model, theme, PHP version, database type and module count. It does not include customer records, orders or payment details. The install ID is not an anonymity guarantee because the administrator email is included. The vendor uses it to support the software and understand version adoption. Installation tracking is disabled by default; the store owner can leave it disabled or change the endpoint when configuring the software.
+Unless installation tracking is disabled during setup or later in the store configuration, our store software sends the software vendor a separate installation record containing a pseudonymous install ID, the store URL, administrator email, software version, store model, theme, PHP version, database type and module count. It does not include customer records, orders, payment data or product data. The install ID is not an anonymity guarantee because the administrator email is included. The vendor uses the record to confirm the installation is authorized under a valid licence, provide support and updates, and understand version adoption. The vendor relies on its legitimate interests in protecting the software and verifying authorized use. The installer shows what is sent and lets the store owner opt out; tracking can also be disabled later by setting SHOPKEEPRR_TRACKING_ENABLED=false and running php artisan config:clear. This stops future reports. To request deletion of a record already sent, contact the software vendor.
 
 ## 3. How we use personal data
 
@@ -131,7 +131,7 @@ We use personal data to:
 Where data protection law requires a legal basis, we rely on one or more of the following:
 
 - performance of a contract (for example, fulfilling an order);
-- legitimate interests (for example, securing the store and improving our services);
+- legitimate interests (for example, securing the store, improving our services, and confirming the store software is used under a valid licence);
 - consent (for example, optional marketing emails); and
 - legal obligation (for example, tax records).
 

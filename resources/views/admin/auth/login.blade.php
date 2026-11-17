@@ -17,7 +17,7 @@
             <h1 class="mt-4 font-display text-5xl leading-[1.05] tracking-tight">Everything your store does, in one place.</h1>
             <p class="mt-5 text-sm leading-7 text-white/50">Orders, customers, subscriptions, pricing tiers and the storefront — without a dozen plugins holding it together.</p>
         </div>
-        <div class="text-[11px] text-white/25">© {{ date('Y') }} {{ nexus_setting('store.name') }} · Powered by ShopKeeprr</div>
+        <div class="text-[11px] text-white/25">© {{ date('Y') }} {{ nexus_setting('store.name') }} · <a href="https://shopkeeprr.com/" target="_blank" rel="noopener" class="underline underline-offset-2 hover:opacity-80">Powered by ShopKeeprr</a></div>
     </div>
     <div class="grid place-items-center bg-[#f6f3ec] px-5 py-12">
         <div class="w-full max-w-md">

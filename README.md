@@ -2,7 +2,8 @@
 
 A self-hosted, multi-mode commerce platform built on Laravel. ShopKeeprr ships with retail, B2B wholesale, subscription and multi-vendor business models, a Stripe/PayPal checkout layer, an admin dashboard, a drag-and-drop storefront builder, an extensible module system and four production-ready storefront themes.
 
-**Version:** 1.1.0  
+**Version:** 1.1.2  
+**License:** Freeware — free to download, run and modify; redistribution is restricted.  
 **Author:** Stephan Johnson (SJDesigns) · stephanjohnson109@gmail.com  
 **Stack:** Laravel 13 · PHP 8.3+ · MySQL 8 / SQLite · Vite 8 · Tailwind CSS 4 · Alpine.js 3
 
@@ -93,13 +94,15 @@ Release notes, module compatibility warnings, backup locations and the manual ro
 
 ### Installation tracking
 
-Installation tracking is **off by default**. If a store owner enables it, a completed installation registers with the official ShopKeeprr Store and sends a daily heartbeat. The record includes a pseudonymous install ID, the store URL, the administrator email entered during setup, version, store model, theme, PHP version, database driver and enabled module count. The install ID is not an anonymity guarantee because the administrator email is included. It never sends customers, orders, payment data or product data.
+Installation tracking is **on by default**. A completed installation registers with the official ShopKeeprr Store and sends a daily heartbeat. The installer shows what is sent and includes a checked opt-out, so the store owner can turn it off before installing. The record includes a pseudonymous install ID, the store URL, the administrator email entered during setup, version, store model, theme, PHP version, database driver and enabled module count. The install ID is not an anonymity guarantee because the administrator email is included. It never sends customers, orders, payment data or product data. The vendor uses it to confirm the installation is authorized under a valid licence, provide support and updates, and understand version adoption.
 
-The endpoint is `SHOPKEEPRR_TRACKING_URL` (default `https://store.shopkeeprr.com/api/v1/installs`). Leave it disabled unless the store owner has been told what is sent:
+The endpoint is `SHOPKEEPRR_TRACKING_URL` (default `https://store.shopkeeprr.com/api/v1/installs`). To opt out during setup, uncheck the installation-record box. To opt out later:
 
 ```dotenv
 SHOPKEEPRR_TRACKING_ENABLED=false
 ```
+
+Run `php artisan config:clear` after changing it. This stops future reports; contact the vendor to request deletion of an existing record.
 
 The Store admin sees the install list, active counts and installs-per-sale comparison under **Admin → Installations**. The endpoint is public by necessity; it accepts registration and heartbeat payloads only, rate-limits both routes and stores the administrator email encrypted.
 
@@ -187,6 +190,7 @@ Palettes are split into semantic tokens (`--brand`, `--link`, `--surface`, `--li
 - Dashboard with revenue, orders, customers and recent activity
 - Order, refund and fulfilment management with status history
 - Catalog, variants, tier prices, inventory movements, categories, coupons and pages
+- WooCommerce migration with CSV/ZIP uploads and an optional read-only REST API connection for products, variations, customers, orders, standard tax rates and supported tax options
 - Customer and wholesale approval management
 - Subscription plans and customer subscriptions
 - Shipping zones/methods, tax rates and reports with CSV export
@@ -245,7 +249,7 @@ The free launch modules are bundled in the free core download. Paid modules are 
 - Configure real SMTP in **Admin → Settings → Mail** and send a test order email.
 - Configure Stripe/PayPal live keys only after testing the full checkout and webhook flow.
 - Add a cron entry for `php artisan schedule:run` so abandoned unpaid orders are cancelled hourly (`shopkeeprr:orders:prune-abandoned`) and enabled modules can run their own schedules, then extend it for any scheduled modules.
-- Keep installation tracking off unless the store owner has been told what is sent. `SHOPKEEPRR_TRACKING_ENABLED=false` is the default; the disclosure is in the README and starter Privacy Policy.
+- Installation tracking is on by default and disclosed in the installer and starter Privacy Policy. The store owner can uncheck it during setup or set `SHOPKEEPRR_TRACKING_ENABLED=false`; run `php artisan config:clear` after changing it.
 - **Settings → Checkout → Cancel unpaid orders after** controls the cancellation window. **Keep abandoned orders on the order screen for (days)** controls how long unpaid orders remain visible; paid orders are always listed.
 - Back up the database and `public/uploads/` on a schedule.
 - Remove demo users, demo products and the installer lock before handing the store to a client.

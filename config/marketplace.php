@@ -32,6 +32,6 @@ return [
     | The platform identifies itself when starting a link. The Store shows this
     | version to the account holder before they approve the site.
     */
-    'user_agent' => 'ShopKeeprr/'.(string) shopkeeprr_env('VERSION', '1.1.0'),
+    'user_agent' => 'ShopKeeprr/'.(string) shopkeeprr_env('VERSION', '1.1.2'),
 
 ];

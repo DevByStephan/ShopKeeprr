@@ -41,6 +41,10 @@ class ProductVariant extends Model
 
     public function imageUrl(): ?string
     {
-        return $this->image ? asset($this->image) : null;
+        if (! $this->image) {
+            return null;
+        }
+
+        return str_starts_with($this->image, 'http') ? $this->image : asset($this->image);
     }
 }

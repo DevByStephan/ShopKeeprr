@@ -22,7 +22,7 @@ return [
     |
     */
 
-    'version' => shopkeeprr_env('VERSION', '1.1.0'),
+    'version' => shopkeeprr_env('VERSION', '1.1.2'),
 
     /*
     |--------------------------------------------------------------------------

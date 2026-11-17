@@ -361,6 +361,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ! $alreadyInstalled) {
                 'admin_name' => trim((string) ($_POST['admin_name'] ?? '')),
                 'admin_email' => trim((string) ($_POST['admin_email'] ?? '')),
                 'admin_password' => (string) ($_POST['admin_password'] ?? ''),
+                'tracking' => ! empty($_POST['tracking']),
                 'demo' => ! empty($_POST['demo']),
             ];
 
@@ -462,8 +463,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ! $alreadyInstalled) {
                     '# Signed updates stay off until a manifest host is published.',
                     'SHOPKEEPRR_UPDATES_ENABLED=true',
                     '',
-                    '# Installation tracking is opt-in. Enable only with disclosure.',
-                    'SHOPKEEPRR_TRACKING_ENABLED=false',
+                    '# Installation tracking is on by default. The installer discloses it and lets the owner opt out.',
+                    'SHOPKEEPRR_TRACKING_ENABLED='.($site['tracking'] ? 'true' : 'false'),
                     'SHOPKEEPRR_TRACKING_URL=https://store.shopkeeprr.com/api/v1/installs',
                 ]);
 
@@ -529,6 +530,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ! $alreadyInstalled) {
                                     'url' => $site['url'],
                                     'admin_email' => $site['admin_email'],
                                     'mode' => $site['mode'],
+                                    'tracking' => $site['tracking'],
                                 ];
                                 unset($_SESSION['nexus_install_db'], $_SESSION['nexus_install_site']);
                             } elseif (! $errors) {
@@ -578,6 +580,7 @@ $adminEmail = $site['admin_email'] ?? '';
 $mode = $site['mode'] ?? 'retail';
 $currency = $site['currency'] ?? 'USD';
 $country = $site['country'] ?? 'US';
+$trackingEnabled = $site['tracking'] ?? true;
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -863,6 +866,16 @@ php artisan shopkeeprr:install --data="<?= e($payloadPath) ?>"</pre>
                                 <input id="admin_password_confirmation" type="password" name="admin_password_confirmation" minlength="10" required autocomplete="new-password">
                             </div>
                         </div>
+
+                        <div class="notice notice-info" style="margin-top:22px">
+                            <strong>Installation and licence record.</strong>
+                            By default, ShopKeeprr sends a small record to the software vendor when setup completes, then a daily heartbeat. It contains the store URL, administrator email, install ID, version, store model, theme, PHP and database details and enabled module count. It never includes customers, orders, payment or product data. The vendor uses it to confirm the installation is authorized under a valid licence, provide support and updates, and understand version adoption.
+                            <label class="check" style="margin-top:12px;background:#fff">
+                                <input type="checkbox" name="tracking" value="1" <?= $trackingEnabled ? 'checked' : '' ?> style="width:auto">
+                                <span class="check-title">Send installation and licence details</span>
+                            </label>
+                            <small style="display:block;margin-top:8px">Uncheck to opt out. You can also set <code>SHOPKEEPRR_TRACKING_ENABLED=false</code> later in <code>.env</code> and run <code>php artisan config:clear</code>. Read the <a href="https://store.shopkeeprr.com/pages/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</small>
+                        </div>
                     </div>
                     <div class="card-foot">
                         <a class="btn btn-ghost" href="install.php?step=2">← Back</a>
@@ -884,7 +897,7 @@ php artisan shopkeeprr:install --data="<?= e($payloadPath) ?>"</pre>
                                 <div class="summary-row"><span>Admin panel</span><span><?= e(($site['url'] ?? $detectedUrl).'/admin/login') ?></span></div>
                                 <div class="summary-row"><span>Administrator</span><span><?= e($site['admin_email'] ?? '') ?></span></div>
                                 <div class="summary-row"><span>Store model</span><span><?= e($site['mode'] ? ucfirst($site['mode']) : 'Decide later') ?></span></div>
-                                <div class="summary-row"><span>Install tracking</span><span><?= is_file($base.'/storage/app/install-tracking.json') ? 'Registered — storage/app/install-tracking.json' : 'Not registered' ?></span></div>
+                                <div class="summary-row"><span>Install tracking</span><span><?= is_file($base.'/storage/app/install-tracking.json') ? 'Registered — storage/app/install-tracking.json' : (($site['tracking'] ?? true) ? 'Enabled — not registered' : 'Disabled during setup') ?></span></div>
                             </div>
                             <?php if (file_exists($base.'/storage/app/demo-credentials.txt')): ?>
                                 <div class="notice notice-warn" style="margin-top:20px">

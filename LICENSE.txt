@@ -1,4 +1,4 @@
-ShopKeeprr — Free Self-Hosted License
+ShopKeeprr — Free Self-Hosted License (Freeware, source-available)
 
 Copyright (c) 2026 Stephan Johnson (SJDesigns). All rights reserved.
 
@@ -42,4 +42,4 @@ legal compliance and the content you publish.
 Support: info@shopkeeprr.com
 Security reports: see SECURITY.md
 Author: Stephan Johnson (SJDesigns)
-Version: 1.1.0
+Version: 1.1.2

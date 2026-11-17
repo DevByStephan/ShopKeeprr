@@ -63,7 +63,7 @@
     <div class="border-t border-white/10">
         <div class="container-wide flex flex-col gap-2 py-5 text-[11px] text-[var(--footer-muted)] sm:flex-row sm:items-center sm:justify-between">
             <span>© {{ date('Y') }} {{ nexus_setting('store.name', 'ShopKeeprr') }}. All rights reserved.</span>
-            <span>Secure checkout · Powered by ShopKeeprr</span>
+            <span>Secure checkout · <a href="https://shopkeeprr.com/" target="_blank" rel="noopener" class="underline underline-offset-2 hover:opacity-80">Powered by ShopKeeprr</a></span>
         </div>
     </div>
 </footer>

@@ -22,6 +22,7 @@ use App\Http\Controllers\Admin\TaxController;
 use App\Http\Controllers\Admin\ThemeController;
 use App\Http\Controllers\Admin\UpdateController;
 use App\Http\Controllers\Admin\VendorController;
+use App\Http\Controllers\Admin\WooCommerceMigrationController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->name('admin.')->group(function () {
@@ -38,6 +39,20 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('store-mode/switch', [StoreModeController::class, 'switch'])->name('store-mode.switch');
         Route::get('store-mode/history', [StoreModeController::class, 'history'])->name('store-mode.history');
         Route::get('store-mode/integrity', [StoreModeController::class, 'integrity'])->name('store-mode.integrity');
+
+        Route::prefix('migrations/woocommerce')->name('migrations.woocommerce.')->group(function () {
+            Route::get('/', [WooCommerceMigrationController::class, 'index'])->name('index');
+            Route::post('/', [WooCommerceMigrationController::class, 'store'])->name('store');
+            Route::post('connections', [WooCommerceMigrationController::class, 'storeConnection'])->name('connections.store');
+            Route::post('connections/{connection}/test', [WooCommerceMigrationController::class, 'testConnection'])->name('connections.test');
+            Route::post('connections/{connection}/start', [WooCommerceMigrationController::class, 'startApi'])->name('connections.start');
+            Route::delete('connections/{connection}', [WooCommerceMigrationController::class, 'destroyConnection'])->name('connections.destroy');
+            Route::get('{migration}', [WooCommerceMigrationController::class, 'show'])->name('show');
+            Route::post('{migration}/run', [WooCommerceMigrationController::class, 'run'])->name('run');
+            Route::post('{migration}/api-run', [WooCommerceMigrationController::class, 'runApi'])->name('api.run');
+            Route::post('{migration}/api-batch', [WooCommerceMigrationController::class, 'apiBatch'])->name('api.batch');
+            Route::get('{migration}/errors', [WooCommerceMigrationController::class, 'errors'])->name('errors');
+        });
 
         Route::resource('products', ProductController::class)->except('show');
         Route::resource('categories', CategoryController::class)->except('show');

@@ -65,7 +65,7 @@ php artisan shopkeeprr:update --check
 php artisan shopkeeprr:update
 
 # Install a specific version from the available chain
-php artisan shopkeeprr:update --install=1.1.1
+php artisan shopkeeprr:update --install=1.1.2
 
 # Show version and recent runs
 php artisan shopkeeprr:update --status
